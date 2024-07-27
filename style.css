@@ -1,0 +1,22 @@
+.box{
+    background-color: aqua;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+    color: rgb(255, 132, 0);
+}
+#para{
+    color: red;
+    font-size: 1.2rem;
+    margin: 0.1rem;
+}
+p{
+    margin: 1rem 0;
+}
+#hover{
+    margin: 1rem 0;
+    position: relative;
+}
