@@ -50,6 +50,23 @@ frm1.addEventListener("click",(e)=>{
     console.log(name);
 })
 // • Task 8: Add a change event listener to a select dropdown that displays the selected value in a paragraph.
+let skilldropdown = document.getElementById("skilldropdown")
+skilldropdown.addEventListener("change",()=>{
+    console.log(skilldropdown.value);
+})
 // Activity 5: Event Delegation
 // • Task 9: Add a click event listener to a list that logs the text content of the clicked list item using event delegation.
+let list = document.querySelector(".list")
+list.addEventListener("click",(e)=>{
+    console.log(e.target.textContent);
+})
 // • Task 10: Add an event listener to a parent element that listens for events from dynamically added child elements.
+let list2 = document.querySelector(".list2")
+list2.addEventListener("click",(e)=>{
+    console.log(e.target.textContent);
+})
+document.getElementById("list2btn").addEventListener("click",()=>{
+    let li = document.createElement("li")
+    li.textContent="new item"
+    list2.appendChild(li)
+})
